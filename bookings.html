@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vintage Therapy | Bookings</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Vintage Therapy</h1>
+    </div>
+    <nav>
+       <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="personnel.html">Personnel</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+        <li><a href="blog.html">Blog</a></li>
+		<li><a href="contacts.html">Contacts</a></li>
+		
+      </ul>
+    </nav>
+
+</header>
+
+<main>
+    <h2>Book a Therapy Session</h2>
+    <form action="submit-booking.php" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="service">Service Type:</label>
+        <select id="service" name="service">
+            <option value="individual">Individual Counseling</option>
+            <option value="family">Family Therapy</option>
+            <option value="group">Group Therapy</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+    </form>
+</main>
+<footer>
+    <p>&copy; 2022 Vintage Therapy. All rights reserved.</p>
+    <p>
+        <a href="contacts.html">Contact & Location</a> |
+        <a href="https://facebook.com/vintagetherapy" target="_blank">Facebook</a> |
+        <a href="https://x.com/vintagetherapy" target="_blank">X (Twitter)</a>
+    </p>
+</footer>
+
+</body>
+
+</html>
